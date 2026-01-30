@@ -58,7 +58,6 @@ export const ProjectModal = ({ isOpen, onClose, data }: ProjectModalProps) => {
                             <IconX className="w-5 h-5" />
                         </button>
 
-                        {/* --- LADO ESQUERDO: IMAGEM (Iphone 16.png) --- */}
                         <div className="w-full md:w-1/2 bg-neutral-100 flex items-center justify-center p-4 relative overflow-hidden">
                             {/* Aumentei um pouco a bolinha de luz atrás também para acompanhar */}
                             <div className="absolute w-[1000px] h-[1000px] bg-white rounded-full blur-3xl opacity-60" />

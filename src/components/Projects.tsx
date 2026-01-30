@@ -28,7 +28,7 @@ export const Projects = () => {
         title: t.projects.nossa_coop.title,
         shortDescription: t.projects.nossa_coop.short_desc,
         fullDescription: t.projects.nossa_coop.full_desc,
-        modalHeroImage: "/assets/Iphone 15 Pro.png",
+        modalHeroImage: "/assets/iphone 15 pro.png",
         techStack: ["Flutter", "Node.js", "Firebase", "Figma"],
         role: t.projects.nossa_coop.role,
         timeline: "2023 - Present",
@@ -40,7 +40,7 @@ export const Projects = () => {
         title: t.projects.coopanest.title,
         shortDescription: t.projects.coopanest.short_desc,
         fullDescription: t.projects.coopanest.full_desc,
-        modalHeroImage: "/assets/Iphone 16.png", // Imagem solicitada
+        modalHeroImage: "/assets/iphone 16.png", // Imagem solicitada
         techStack: ["React Native", "TypeScript", "Supabase"], // Exemplo, ajuste se necessário
         role: t.projects.coopanest.role,
         timeline: "2024",

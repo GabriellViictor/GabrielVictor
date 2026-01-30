@@ -18,7 +18,7 @@ const pixel = Pixelify_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Meu Portfólio",
+  title: "Gabriel Victor",
   description: "UX/UI Designer Portfolio",
 };
 

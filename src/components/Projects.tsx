@@ -97,7 +97,7 @@ export const Projects = () => {
             header: (
                 <img
                     // Usando a mesma imagem do modal ou outra capa se tiver
-                    src="/assets/Frame_1.png" 
+                    src="/assets/frame_1.png" 
                     alt="App Coopanest"
                     className="w-full h-full object-cover" // Ajuste visual para celular
                 />

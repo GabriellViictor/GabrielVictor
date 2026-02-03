@@ -7,6 +7,7 @@ import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
 import { Carrer } from "@/components/Carrer";
 import { Footer } from "@/components/Footer";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
 
       <Hero />
       {/*<Clients />*/}
+      <div className="fixed top-6 right-6 z-50">
+        <LanguageSwitcher />
+      </div>
       <Projects />
       <About />
       <Contact />

@@ -50,7 +50,7 @@ export const Footer = () => {
                             {t.nav.projects}
                         </Link>
                         <Link href="#carrer" className="text-neutral-300 hover:text-white transition-colors">
-                            {t.nav.carrer}
+                            {t.nav.career}
                         </Link>
                     </div>
                 </div>
@@ -94,12 +94,6 @@ export const Footer = () => {
 
             </div>
 
-            {/* RODAPÉ GIGANTE */}
-            <div className="w-full flex justify-center opacity-20 select-none pointer-events-none">
-                <h1 className="text-[12vw] leading-none font-[family-name:var(--font-pixel)] text-transparent bg-clip-text bg-gradient-to-b from-neutral-700 to-neutral-950">
-                    GABRIEL
-                </h1>
-            </div>
 
         </footer>
     );

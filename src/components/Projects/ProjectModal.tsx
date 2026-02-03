@@ -1,7 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { IconX, IconArrowRight, IconStack2, IconCheck } from "@tabler/icons-react";
+import { IconX } from "@tabler/icons-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface ProjectModalProps {
     isOpen: boolean;
@@ -19,6 +20,7 @@ interface ProjectModalProps {
 }
 
 export const ProjectModal = ({ isOpen, onClose, data }: ProjectModalProps) => {
+    const { t } = useLanguage();
 
     useEffect(() => {
         const handleEsc = (e: KeyboardEvent) => {
@@ -68,7 +70,6 @@ export const ProjectModal = ({ isOpen, onClose, data }: ProjectModalProps) => {
                                 transition={{ delay: 0.2 }}
                                 src={data.modalHeroImage}
                                 alt={data.title}
-                                // AQUI ESTÁ A MUDANÇA: de max-w-[400px] para max-w-[550px]
                                 className="relative z-10 w-full max-w-[1000px] h-auto object-contain drop-shadow-2xl"
                             />
                         </div>
@@ -79,7 +80,9 @@ export const ProjectModal = ({ isOpen, onClose, data }: ProjectModalProps) => {
 
                                 <div className="flex items-center gap-2 mb-6">
                                     <span className="w-2 h-2 bg-black rounded-full"></span>
-                                    <span className="text-neutral-500 font-bold text-xs tracking-widest uppercase">Case Study</span>
+                                    <span className="text-neutral-500 font-bold text-xs tracking-widest uppercase">
+                                        {t.projects.modal.badge}
+                                    </span>
                                 </div>
 
                                 <h1 className="text-4xl md:text-6xl font-bold text-neutral-900 mb-6 font-[family-name:var(--font-pixel)]">
@@ -92,11 +95,23 @@ export const ProjectModal = ({ isOpen, onClose, data }: ProjectModalProps) => {
 
                                 {/* Dados Rápidos */}
                                 <div className="grid grid-cols-2 gap-6 mb-10 border-t border-b border-neutral-100 py-6">
-                                    <div><h4 className="text-neutral-900 font-bold text-sm uppercase">Role</h4><p className="text-neutral-500 text-sm">{data.role}</p></div>
-                                    <div><h4 className="text-neutral-900 font-bold text-sm uppercase">Timeline</h4><p className="text-neutral-500 text-sm">{data.timeline}</p></div>
+                                    <div>
+                                        <h4 className="text-neutral-900 font-bold text-sm uppercase">
+                                            {t.projects.modal.role}
+                                        </h4>
+                                        <p className="text-neutral-500 text-sm">{data.role}</p>
+                                    </div>
+                                    <div>
+                                        <h4 className="text-neutral-900 font-bold text-sm uppercase">
+                                            {t.projects.modal.timeline}
+                                        </h4>
+                                        <p className="text-neutral-500 text-sm">{data.timeline}</p>
+                                    </div>
                                 </div>
 
-                                <h3 className="text-xl font-bold text-neutral-900 mb-4">Challenge & Solution</h3>
+                                <h3 className="text-xl font-bold text-neutral-900 mb-4">
+                                    {t.projects.modal.challenge}
+                                </h3>
                                 <p className="text-neutral-500 leading-relaxed whitespace-pre-line mb-8">
                                     {data.fullDescription}
                                 </p>

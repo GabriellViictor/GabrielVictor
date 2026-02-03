@@ -27,14 +27,16 @@ export const Navbar = () => {
                 <Link href="#home" className="hover:text-white transition-colors">
                     {t.nav.home}
                 </Link>
-                <Link href="#about" className="hover:text-white transition-colors">
-                    {t.nav.about}
-                </Link>
+
                 <Link href="#projects" className="hover:text-white transition-colors">
                     {t.nav.projects}
                 </Link>
-                <Link href="#carrer" className="hover:text-white transition-colors">
-                    {t.nav.carrer}
+
+                <Link href="#about" className="hover:text-white transition-colors">
+                    {t.nav.about}
+                </Link>
+                <Link href="#career" className="hover:text-white transition-colors">
+                    {t.nav.career}
                 </Link>
             </div>
 

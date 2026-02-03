@@ -4,6 +4,8 @@ import "./globals.css";
 // IMPORTA O PROVIDER E O BOTÃO QUE CRIAMOS ACIMA
 import { LanguageProvider } from "@/context/LanguageContext";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { Inter } from "next/font/google"; // 1. Importe a Inter
+const inter = Inter({ subsets: ["latin"] });
 
 const syne = Syne({
   subsets: ["latin"],
@@ -28,13 +30,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" className="scroll-smooth">
-      <body className={`${syne.variable} ${pixel.variable} font-sans antialiased bg-black`}>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${inter.className} ${inter.className} font-sans antialiased bg-black`}>
 
-        {/* O PROVIDER ABRAÇA TUDO (Filhos + Botão) */}
         <LanguageProvider>
           {children}
-          <LanguageSwitcher />
         </LanguageProvider>
 
       </body>

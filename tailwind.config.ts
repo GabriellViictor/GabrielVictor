@@ -8,20 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-      // --- ANIMAÇÃO DO CARROSSEL ---
+      // ... outras configs (backgroundImage, etc)
       keyframes: {
         scroll: {
-          from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-100%)" },
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" }, // VOLTAR PARA -100%
         },
       },
       animation: {
-        scroll: "scroll 50s linear infinite",
+        scroll: "scroll 40s linear infinite",
       },
     },
   },

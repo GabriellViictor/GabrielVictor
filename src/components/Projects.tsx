@@ -137,7 +137,7 @@ export const Projects = () => {
             ...t.projects.nossa_coop,
             id: "nossa_coop",
             cardImage: "/assets/iPhone-coopanest.png", 
-            backgroundImage: "/assets/nossacoop.webp", 
+            backgroundImage: "/assets/nossacoop.webp",
             modalHeroImage: "/assets/iphone_15_pro.png"
         },
         {
